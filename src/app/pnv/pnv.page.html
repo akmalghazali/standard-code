@@ -54,9 +54,9 @@
     </ion-col>
   </ion-row>
 </ion-grid>
-<ion-segment scrollable [(ngModel)]="account" mode="md">
-  <ion-segment-button value="MEMBER CARD">
-    <ion-label>MEMBER CARD</ion-label>
+<ion-segment scrollable value="point" mode="md">
+  <ion-segment-button value="VOUCHER-REWARD">
+    <ion-label>VOUCHER REWARDS</ion-label>
   </ion-segment-button>
   <ion-segment-button value="DETAIL">
     <ion-label>DETAIL</ion-label>
@@ -64,18 +64,16 @@
 
 </ion-segment>
 
-<div [ngSwitch]="account">
-  <div *ngSwitchCase="'MEMBER CARD'">
-    <p style="color: black;">TEST MEMBER CARD</p>
+
+<div [ngSwitch]="point">
+  <div *ngSwitchCase="'VOUCHER-REWARD'">
+    <p style="color: black;">TEST VOUCHER REWARD 12w212</p>
   </div>
-  <div *ngSwitchCase="'DETAIL'">
-    <p style="color: black;">TEST DETAIL</p>
+  <div *ngSwitchCase="'POINT-HISTORY'">
+    <p style="color: black;">TEST POINT qwsa HISTORY</p>
   </div>
 </div>
 
-<div>
-  <h6>Purchasing history</h6>
-  </div>
 </ion-content>
 <ion-footer>
   <ion-toolbar>
@@ -83,7 +81,7 @@
       <a href="./home/"><img class="nav-bar-img" src="../../assets/icon/home-black.png" style="height: 45px; width: 50px;" alt=""></a>
     </ion-button>
     <ion-button fill="clear">
-      <a href="./my-account/"><img class="nav-bar-img" src="../../assets/icon/myaccount-red.png"  style="height: 45px; width: 50px;" alt=""></a>
+      <a href="./my-account/"><img class="nav-bar-img" src="../../assets/icon/myaccount-black.png"  style="height: 45px; width: 50px;" alt=""></a>
     </ion-button>
     <ion-button fill="clear">
       <a href="./promotions/"><img class="nav-bar-img" src="../../assets/icon/promotions-black.png"  style="height: 45px; width: 50px;" alt=""></a>
